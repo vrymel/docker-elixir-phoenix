@@ -1,18 +1,8 @@
 # Docker Elixir Phoenix
 
-This repository is a `Dockerfile` definition for creating a base Elixir image with Phoenix pre-installed.
+This repository is a Dockerfile definition for creating a base Elixir image with `Phoenix`, `hex`, and `rebar` pre-installed.
 
 `Node` is pre-installed as well.
-
-#### Notes
-
-`hex` and `rebar` are not pre-installed, so you need to do a mix install for both.
-
-Example `RUN` command for installing _hex_ and _rebar_:
-
-    RUN mix local.hex --force
-
-    RUN mix local.rebar --force
 
 #### Installing project dependencies
 
